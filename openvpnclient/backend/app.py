@@ -15,7 +15,9 @@ _FILES = [
     'ca.crt',
     'client.crt',
     'client.key',
-    'ta.key'
+    'ta.key',
+    'openvpn.ovpn',
+    'user.key'
 ]
 
 
@@ -28,6 +30,8 @@ def root():
 @application.route('/client_cert/', methods=['POST'])
 @application.route('/client_key/', methods=['POST'])
 @application.route('/ta_key/', methods=['POST'])
+@application.route('/openvpn_ovpn/', methods=['POST'])
+@application.route('/user_key/', methods=['POST'])
 def upload():
     if request.method == 'POST':
 
