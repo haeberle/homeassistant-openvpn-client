@@ -180,6 +180,50 @@
             <div class="card hoverable">
                 <div class="card-stacked">
                     <div class="card-content">
+                        <h4>Open VPN Configuration</h4>
+                        <div class="row">
+                            <p class="flow-text">
+                                The first file contains the Openvpn configuration file
+                            </p>
+                            <p class="flow-text">
+                                The second file contains the user / password used in the auth-user-pass user.key configuration parameter
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col m10 l6 xl4 offset-s1 offset-m1 offset-xl2">
+                                <form method="post" action="openvpn_ovpn/" enctype="multipart/form-data">
+                                    <div class="file-field input-field">
+                                        <div class="btn light-blue">
+                                            <span>openvpn.ovpn</span>
+                                            <input type="file" accept=".ovpn" name="openvpn_ovpn">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input placeholder="openvpn.ovpn" class="file-path validate" type="text">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col m10 l6 xl4 offset-s1 offset-m1  ">
+                                <form method="post" action="user_key" enctype="multipart/form-data">
+                                    <div class="file-field input-field">
+                                        <div class="btn light-blue">
+                                            <span>user.key</span>
+                                            <input type="file" accept=".key" name="user_key">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input placeholder="user.key" class="file-path validate" type="text">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="card hoverable">
+                <div class="card-stacked">
+                    <div class="card-content">
                         <h4>TLS Authentification</h4>
                         <div class="row">
                             <p class="flow-text">
