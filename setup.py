@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2016-2018 by Lars Klitzke, lars@klitzke-web.de
+# extended by (c) 2024 by haeberle
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -33,7 +34,7 @@ setuptools.setup(
     description='',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author='Lars Klitzke',
+    author='Lars Klitzke/haeberle',
     author_email='Lars@klitzke-web.de',
     entry_points={
         'console_scripts': [
