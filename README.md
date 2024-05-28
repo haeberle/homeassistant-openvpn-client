@@ -25,7 +25,7 @@ Therefore, assuming Home Assistant is running at `<server>`, connect to the devi
 
 and clone this repository in `/addons` with
 
-`cd /addons && git clone https://github.com/larsklitzke/homeassistant-openvpn-client.git`
+`cd /addons && git clone https://github.com/haeberle/homeassistant-openvpn-client.git`
 
 Enable the `OpenVPNClient` by adding a new `panel_iframe` entity  to your `configuration.yaml` with the following entry:
 
